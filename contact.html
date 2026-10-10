@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اتصل بنا</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Tahoma}
+body{background:#f5f7fb}
+nav{background:#1a73e8;padding:15px 30px;display:flex;justify-content:space-between}
+nav a{color:white;text-decoration:none;margin:0 8px;font-weight:bold}
+.container{max-width:1100px;margin:30px auto;padding:20px}
+.card{background:white;padding:25px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.1);max-width:600px;margin:auto}
+input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
+.btn{background:#1a73e8;color:white;padding:12px 20px;border-radius:8px;border:none;cursor:pointer;width:100%}
+</style>
+</head>
+<body>
+<nav>
+<h2><a href="index.html">FreeCourses</a></h2>
+<div><a href="index.html">الرئيسية</a><a href="courses.html">الكورسات</a></div>
+</nav>
+<div class="container">
+<div class="card">
+<h2 style="text-align:center">اتصل بنا</h2><br>
+<form onsubmit="alert('تم ارسال رسالتك ✅'); return false;">
+<input type="text" placeholder="اسمك" required>
+<input type="email" placeholder="ايميلك" required>
+<textarea rows="5" placeholder="رسالتك..." required></textarea>
+<button class="btn" type="submit">ارسال</button>
+</form>
+</div>
+</div>
+</body>
+</html>

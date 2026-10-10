@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسجيل الدخول - FreeCourses</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<h2><a href="index.html" style="color:white; text-decoration:none;">FreeCourses</a></h2>
+<div>
+<a href="index.html">الرئيسية</a>
+<a href="courses.html">الكورسات</a>
+<a href="contact.html">اتصل بنا</a>
+</div>
+</nav>
+
+<div class="container">
+<div class="card" style="max-width:400px; margin:50px auto; text-align:center;">
+<h2>تسجيل الدخول</h2>
+<br>
+<form onsubmit="return loginCheck()">
+<input type="email" id="email" placeholder="البريد الالكتروني" required>
+<input type="password" id="password" placeholder="كلمة السر" required>
+<button class="btn" type="submit" style="width:100%; margin-top:10px;">دخول</button>
+</form>
+<br>
+<p>ما عندك حساب؟ <a href="#">سجل الان</a></p>
+</div>
+</div>
+
+<script>
+function loginCheck(){
+alert("تم تسجيل الدخول بنجاح ✅");
+window.location.href="index.html";
+return false;
+}
+</script>
+
+</body>
+</html>
