@@ -1,42 +1,56 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="ar">
+<html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>تسجيل الدخول - FreeCourses</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>تسجيل الدخول</title>
 </head>
+
 <body>
-<nav>
-<h2><a href="index.html" style="color:white; text-decoration:none;">FreeCourses</a></h2>
-<div>
-<a href="index.html">الرئيسية</a>
-<a href="courses.html">الكورسات</a>
-<a href="contact.html">اتصل بنا</a>
-</div>
-</nav>
 
-<div class="container">
-<div class="card" style="max-width:400px; margin:50px auto; text-align:center;">
-<h2>تسجيل الدخول</h2>
-<br>
-<form onsubmit="return loginCheck()">
-<input type="email" id="email" placeholder="البريد الالكتروني" required>
-<input type="password" id="password" placeholder="كلمة السر" required>
-<button class="btn" type="submit" style="width:100%; margin-top:10px;">دخول</button>
-</form>
-<br>
-<p>ما عندك حساب؟ <a href="#">سجل الان</a></p>
-</div>
-</div>
+<center>
 
-<script>
-function loginCheck(){
-alert("تم تسجيل الدخول بنجاح ✅");
-window.location.href="index.html";
-return false;
-}
-</script>
+    <h1>موقع كورسات مجانية</h1>
+
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="courses.html">الكورسات</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="contact.html">اتصل بنا</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="login.html">تسجيل الدخول</a>
+    </nav>
+
+    <hr>
+
+    <h2>تسجيل الدخول</h2>
+
+    <form action="index.html" method="get">
+
+        <label>البريد الإلكتروني:</label>
+        <br>
+        <input type="email" name="email" required>
+
+        <br><br>
+
+        <label>كلمة المرور:</label>
+        <br>
+        <input type="password" name="password" required>
+
+        <br><br>
+
+        <input type="submit" value="دخول">
+
+    </form>
+
+    <br>
+
+    <p>
+        ليس لديك حساب؟
+        <a href="signup.html">إنشاء حساب</a>
+    </p>
+
+</center>
 
 </body>
 </html>
